@@ -1,4 +1,9 @@
 .header {
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 28px;
+}
+
+.header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;

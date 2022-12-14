@@ -1,0 +1,15 @@
+.filter-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 17px;
+    border: 1px solid #DDDDDD;
+    border-radius: 8px;
+    background: transparent;
+    height: 48px;
+}
+
+.filter-btn__img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
