@@ -1,0 +1,36 @@
+.swiper-slide {
+    width: auto;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+.swiper-button-prev {
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: #fff;
+    background-image: url(./assets/filter/arrow-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: center;
+    border: 0.5px solid rgb(0 0 0 / 0.3);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.swiper-button-next::after {
+    display: none;
+}
+
+:root {
+    --swiper-theme-color: white;
+}

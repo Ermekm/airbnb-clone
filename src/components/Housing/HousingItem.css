@@ -1,0 +1,81 @@
+.housing {
+    min-width: 0;
+}
+
+.housing__img-wrapper {
+    position: relative;
+    margin-bottom: 6px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.housing__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.housing__like-wrapper {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    z-index: 1;
+}
+
+.housing__address-rating-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.housing__address {
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+
+.housing__rating {
+    font-size: 14px;
+    line-height: 17px;
+    color: #717171
+}
+
+.housing__rating-icon {
+    margin-left: 4px;
+}
+
+.housing__distance {
+    font-size: 12px;
+    line-height: 14px;
+    color: #717171;
+    margin-bottom: 4px;
+}
+
+.housing__available-dates {
+    font-size: 12px;
+    line-height: 14px;
+    color: #717171;
+    margin-bottom: 4px;
+}
+
+.housing__cost {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: #222222;
+}
+
+.housing .swiper-button-next,
+.housing .swiper-button-prev {
+    opacity: 0;
+    height: 0;
+    border: none;
+    transition: opacity 0.5s ease;
+}
+
+.hover .swiper-button-next,
+.hover .swiper-button-prev {
+    opacity: 1;
+    height: 24px;
+}

@@ -1,4 +1,9 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from "swiper";
+
+// import 'swiper/css';
+// import "swiper/css/navigation";
 import "./CategoryList.css"
 
 import category_1 from "../../assets/filter/category-1.png"
@@ -76,9 +81,19 @@ const categoryList = [
 const CategoryList = () => {
     return (
         <div className='category'>
-            {categoryList.map((item) =>
-                <CategoryItem category={item} />
-            )}
+            <Swiper
+                slidesPerGroupAuto={true}
+                slidesPerView={"auto"}
+                spaceBetween={40}
+                navigation={true} 
+                modules={[Navigation]}
+                onSlideChange={() => console.log('slide change')}
+                onSwiper={(swiper) => console.log(swiper)}
+            >
+                {categoryList.map((item) =>
+                    <SwiperSlide key={item.title}><CategoryItem category={item} /></SwiperSlide>
+                )}
+            </Swiper>
         </div>
     )
 }

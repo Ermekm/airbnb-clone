@@ -1,6 +1,29 @@
 .category {
-    display: flex;
+    position: relative;
     overflow: hidden;
-    gap: 40px;
     margin-right: 16px;
+}
+
+.category .swiper-slide {
+    width: auto;
+}
+
+.category .swiper-button-disabled {
+    display: none;
+}
+
+.category .swiper-button-prev {
+    left: 0;
+}
+
+.category .swiper-button-prev::after {
+    display: none;
+}
+
+.category .swiper-button-next {
+    right: 0;
+}
+
+.category .swiper-button-next::after {
+    display: none;
 }
